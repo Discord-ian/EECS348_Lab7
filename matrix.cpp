@@ -49,8 +49,10 @@ public:
             for (int j = 0; j < SIZE; j++) {
                 // Multiply a11 * b11, then add a12 * b21 to that
                 // initialize that cell
+				result.data[i][j] = 0;
                 // now we need to go through all rows in m2 with our current indices
                 // (Because we go down the rows in matrix multiplication, not across columns)
+
                 for (int k = 0; k < SIZE; k++) {
                     /* Example:
                      * [ 1 2 3 ] * [2 3]    result at (0,0) = [ (1*2) + (2*2) + (3*3) ]
