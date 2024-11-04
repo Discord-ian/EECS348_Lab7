@@ -106,17 +106,17 @@ int main() {
     mat2.display();
 
     Matrix sum = mat1 + mat2;
-    cout << "Sum of matrices:" << endl;
+    cout << "\nSum of matrices:" << endl;
     sum.display();
 
     Matrix product = mat1 * mat2;
-    cout << "Product of matrices:" << endl;
+    cout << "\nProduct of matrices:" << endl;
     product.display();
 
-    cout << "Sum of diagonals of Matrix 1: " << mat1.sumOfDiagonals() << endl;
+    cout << "\nSum of diagonals of Matrix 1: " << mat1.sumOfDiagonals() << endl;
     int row1 = 0, row2 = 2;
     mat1.swapRows(row1, row2);
-    cout << "Matrix 1 after swapping rows " << row1 << " and " << row2 << ":" << endl;
+    cout << "\nMatrix 1 after swapping rows " << row1 << " and " << row2 << ":" << endl;
     mat1.display();
 
     return 0;
